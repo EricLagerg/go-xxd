@@ -326,12 +326,9 @@ func parseSeek(s string) int64 {
 
 // is byte a space? (\t, \n, \s)
 func isSpace(b *byte) bool {
-	if *b == 32 ||
+	return *b == 32 ||
 		*b == 9 ||
-		*b == 12 {
-		return true
-	}
-	return false
+		*b == 12
 }
 
 // are the two bytes hex prefixes? (0x or 0X)
