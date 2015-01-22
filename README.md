@@ -6,9 +6,9 @@ Additionally, this implementation adds some extra flags such as optional bars be
 
 The origin of the program can be read below, and this repository is the continually developed branch forked from the origin, https://github.com/felixge/go-xxd
 
-----------
+(Old below README)
 
-(Old below)
+--------------
 
 # go-xxd
 
