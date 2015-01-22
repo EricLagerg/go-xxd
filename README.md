@@ -1,5 +1,17 @@
 # go-xxd
 
+go-xxd is a Go port of the popular `xxd` and `hexdump` programs. It reads small files with comparable speed as the native utilities, and reads large files up to twice as fast.
+
+Additionally, this implementation adds some extra flags such as optional bars before/after ASCII output, reverting from C #include/postscript/binary format, and a "smart" seek implementation (using byte unit postfixes like MB, kB, etc.)
+
+The origin of the program can be read below, and this repository is the continually developed branch forked from the origin, https://github.com/felixge/go-xxd
+
+----------
+
+(Old below)
+
+# go-xxd
+
 This repository contains my answer to [How can I improve the performance of
 my xxd
 port?](http://www.reddit.com/r/golang/comments/2s1zn1/how_can_i_improve_the_performance_of_my_xxd_port/)
