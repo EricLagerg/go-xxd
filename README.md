@@ -4,6 +4,33 @@ go-xxd is a Go port of the popular `xxd` and `hexdump` programs. It reads small 
 
 Additionally, this implementation adds some extra flags such as optional bars before/after ASCII output, reverting from C #include/postscript/binary format, and a "smart" seek implementation (using byte unit postfixes like MB, kB, etc.)
 
+For easy installation: ```curl https://github.com/EricLagerg/go-xxd/install.sh | sh```
+
+```
+Usage:
+       xxd [options] [infile [outfile]]
+    or
+       xxd -r [-s offset] [-c cols] [--ps] [infile [outfile]]
+Options:
+    -a, --autoskip     toggle autoskip: A single '*' replaces nul-lines. Default off.
+    -B, --bars         print pipes/bars before/after ASCII/EBCDIC output. Default off.
+    -b, --binary       binary digit dump (incompatible with -ps, -i, -r).Default hex.
+    -c, --cols         format <cols> octets per line. Default 16 (-i 12, --ps 30).
+    -E, --ebcdic       show characters in EBCDIC. Default ASCII.
+    -g, --groups       number of octets per group in normal output. Default 2.
+    -h, --help         print this summary.
+    -i, --include      output in C include file style.
+    -l, --length       stop after <len> octets.
+    -p, --ps           output in postscript plain hexdump style.
+    -r, --reverse      reverse operation: convert (or patch) hexdump into ASCII output.
+                       * reversing non-hexdump formats require -r<flag> (i.e. -rb, -ri, -rp).
+    -s, --seek         start at <seek> bytes/bits in file. Byte/bit postfixes can be used.
+    		       * byte/bit postfix units are multiples of 1024.
+    		       * bits (kb, mb, etc.) will be rounded down to nearest byte.
+    -u, --uppercase    use upper case hex letters.
+    -v, --version      show version.
+```
+
 The origin of the program can be read below, and this repository is the continually developed branch forked from the origin, https://github.com/felixge/go-xxd
 
 (Old below README)
