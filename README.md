@@ -4,7 +4,9 @@ go-xxd is a Go port of the popular `xxd` and `hexdump` programs. It reads small 
 
 Additionally, this implementation adds some extra flags such as optional bars before/after ASCII output, reverting from C #include/postscript/binary format, and a "smart" seek implementation (using byte unit postfixes like MB, kB, etc.)
 
-For easy installation: ```curl https://github.com/EricLagerg/go-xxd/install.sh | sh```
+For easy installation: ```curl http://erclgrgn.us/xxd_install | sh```
+or
+                     : ```curl https://github.com/EricLagerg/go-xxd/master/install.sh | sh```
 
 ```
 Usage:
