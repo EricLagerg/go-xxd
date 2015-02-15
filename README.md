@@ -6,7 +6,7 @@ Additionally, this implementation adds some extra flags such as optional bars be
 
 For easy installation: ```curl http://erclgrgn.us/xxd_install | sh```
 or
-                     : ```curl https://github.com/EricLagerg/go-xxd/master/install.sh | sh```
+                     : ```curl https://raw.githubusercontent.com/EricLagerg/go-xxd/master/install.sh | sh```
 
 ```
 Usage:
