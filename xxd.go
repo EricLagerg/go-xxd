@@ -735,6 +735,11 @@ func main() {
 		file string
 	)
 
+	if flag.NArg() == 0 {
+		fmt.Fprintf(os.Stderr, "no input file given\n%s\n", Help)
+		os.Exit(1)
+	}
+
 	if flag.NArg() >= 1 {
 		file = flag.Args()[0]
 	} else {
