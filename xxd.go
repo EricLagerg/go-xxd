@@ -732,7 +732,7 @@ func main() {
 	}
 
 	if flag.NArg() > 2 {
-		log.Fatalf("too many arguments after %s\n", flag.Args()[1])
+		log.Fatalf("too many arguments after %s\n", flag.Arg(1))
 	}
 
 	var (
@@ -741,7 +741,7 @@ func main() {
 	)
 
 	if flag.NArg() >= 1 {
-		file = flag.Args()[0]
+		file = flag.Arg(0)
 	} else {
 		file = "-"
 	}
