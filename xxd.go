@@ -769,7 +769,7 @@ func main() {
 
 	var outFile *os.File
 	if flag.NArg() == 2 {
-		outFile, err = os.Open(flag.Args()[1])
+		outFile, err = os.OpenFile(flag.Arg(1), os.O_RDWR|os.O_CREATE, 0660)
 		if err != nil {
 			log.Fatalln(err)
 		}
