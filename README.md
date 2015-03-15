@@ -1,5 +1,7 @@
 # go-xxd
 
+[![Build Status](https://travis-ci.org/EricLagerg/go-xxd.svg)](https://travis-ci.org/EricLagerg/go-xxd)
+
 go-xxd is a Go port of the popular `xxd` and `hexdump` programs. It reads small files with comparable speed as the native utilities, and reads large files up to twice as fast.
 
 Additionally, this implementation adds some extra flags such as optional bars before/after ASCII output, reverting from C #include/postscript/binary format, and a "smart" seek implementation (using byte unit postfixes like MB, kB, etc.)
