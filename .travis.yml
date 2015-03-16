@@ -6,4 +6,5 @@ go:
   - tip
 
 install:
+  - go build xxd.go
   - go get github.com/ogier/pflag
