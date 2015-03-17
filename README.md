@@ -1,6 +1,7 @@
 # go-xxd
 
 [![Build Status](https://travis-ci.org/EricLagerg/go-xxd.svg)](https://travis-ci.org/EricLagerg/go-xxd)
+[![Coverage Status](https://coveralls.io/repos/EricLagerg/go-xxd/badge.svg)](https://coveralls.io/r/EricLagerg/go-xxd)
 
 go-xxd is a Go port of the popular `xxd` and `hexdump` programs. It reads small files with comparable speed as the native utilities, and reads large files up to twice as fast.
 
