@@ -9,7 +9,8 @@ before_install:
   - go get github.com/ogier/pflag
   - go get golang.org/x/tools/cmd/vet
   - go get github.com/golang/lint/golint
-  - sudo apt-get install xxd
+  - sudo apt-get update
+  - sudo apt-get install vim-common
 
 script:
   - go vet -x
