@@ -14,6 +14,7 @@ import (
 )
 
 var xxdFile = flag.String("xxdFile", "", "File to test against.")
+var sysXxd = flag.String("sysXxd", "", "System's xxd file")
 
 func TestXXD(t *testing.T) {
 	if *xxdFile == "" {
@@ -82,7 +83,7 @@ func BenchmarkXXD(b *testing.B) {
 }
 
 func xxdNative(r io.Reader, w io.Writer, s string) error {
-	xxd := exec.Command("xxd.bak", "-")
+	xxd := exec.Command(*sysXxd, "-")
 	xxd.Stdin = r
 	xxd.Stdout = w
 	xxd.Stderr = w

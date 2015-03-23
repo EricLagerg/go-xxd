@@ -9,8 +9,9 @@ before_install:
   - go get github.com/ogier/pflag
   - go get golang.org/x/tools/cmd/vet
   - go get github.com/golang/lint/golint
+  - apt-get install xxd
 
 script:
   - go vet -x
   - golint
-  - go test -v -xxdFile=image.jpg
+  - go test -v -xxdFile=image.jpg -sysXxd=xxd
